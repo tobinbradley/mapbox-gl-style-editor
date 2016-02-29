@@ -23,9 +23,6 @@ if (!fs.existsSync(stylePath)) {
   process.exit(1);
 }
 
-// make sure assets folder exists
-makeDir(['./app/assets/font']);
-
 // function mkdir -p
 function makeDir(path) {
   path.forEach(function(p) {
@@ -48,7 +45,8 @@ gulp.task('browser-sync', ['fonts', 'sprites'], function() {
 });
 
 // make sprites
-gulp.task('sprites', function(cb) {
+gulp.task('sprites', ['clean'], function(cb) {
+    makeDir(['./app/assets/font']);
     exec('npm run makesprite -- ./app/assets/sprite ' + path.join(stylePath, '/svg'), function (err, stdout, stderr) {
       console.log('Generating sprites...');
       exec('npm run makesprite -- --retina ./app/assets/sprite2 ' + path.join(stylePath, '/svg'), function (err, stdout, stderr) {
@@ -73,6 +71,7 @@ gulp.task('fonts', ['clean'], function(cb) {
   });
 });
 
+// validate the style before moving to app folder
 gulp.task('gl-style-validate', function() {
   try {
     var test = validate(fs.readFileSync(path.join(stylePath, 'style.json'), 'utf8'));
@@ -97,12 +96,13 @@ gulp.task('gl-style-validate', function() {
   }
 });
 
+// wipe old assets folder
 gulp.task('clean', function() {
-  return gulp.src(['./app/assets/font/*'], {read: false})
+  return gulp.src(['./app/assets'], {read: false})
     .pipe(clean());
 });
 
-
+// watch for style changes
 gulp.task('watch', function() {
   gulp.watch(['./styles/**/*.json'], ['gl-style-validate']);
 });
