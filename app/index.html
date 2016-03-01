@@ -27,7 +27,7 @@
 <body>
 <div id='map'></div>
 <div id='errors'></div>
-<script>  
+<script>
   var errors = document.getElementById('errors');
   mapboxgl.util.getJSON('style.json', function(err, stylesheet) {
     if (err) {
@@ -47,7 +47,8 @@
       container: 'map',
       style: stylesheet,
       center: [-79.50, 40],
-      zoom: 2
+      zoom: 2,
+      hash: true
     });
     map.addControl(new mapboxgl.Navigation());
 });
