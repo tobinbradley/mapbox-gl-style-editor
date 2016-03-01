@@ -99,6 +99,17 @@
             "interactive": true
         },
         {
+            "id": "tax_parcels_outline",
+            "type": "line",
+            "source": "parcels",
+            "source-layer": "parcels",
+            "minzoom": 17,
+            "paint": {
+              "line-color": "#eeeaea",
+              "line-width": 1.5
+            }
+        },
+        {
             "interactive": true,
             "layout": {
                 "line-cap": "butt",
