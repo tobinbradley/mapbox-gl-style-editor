@@ -3054,7 +3054,27 @@
               "line-width": 1.5
             }
         },
-
+        {
+            "id": "building",
+            "type": "fill",
+            "source": "mapbox",
+            "source-layer": "building",
+            "paint": {
+                "fill-color": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            15.5,
+                            "#f2eae2"
+                        ],
+                        [
+                            16,
+                            "#dfdbd7"
+                        ]
+                    ]
+                }
+            }
+        },
         {
             "id": "buildings",
             "type": "fill",

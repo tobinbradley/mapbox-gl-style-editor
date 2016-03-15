@@ -49,7 +49,7 @@ gulp.task('sprites', ['clean'], function(cb) {
     makeDir(['./app/assets/font']);
     exec('npm run makesprite -- ./app/assets/sprite ' + path.join(stylePath, '/svg'), function (err, stdout, stderr) {
       console.log('Generating sprites...');
-      exec('npm run makesprite -- --retina ./app/assets/sprite2 ' + path.join(stylePath, '/svg'), function (err, stdout, stderr) {
+      exec('npm run makesprite -- --retina ./app/assets/sprite@2x ' + path.join(stylePath, '/svg'), function (err, stdout, stderr) {
         console.log('Generating retina sprites...');
         cb();
       });
@@ -109,3 +109,4 @@ gulp.task('watch', function() {
 
 
 gulp.task('default', ['clean', 'sprites', 'fonts', 'browser-sync', 'watch', 'gl-style-validate']);
+gulp.task('generate', ['clean', 'sprites', 'fonts']);
