@@ -3,11 +3,11 @@
     "name": "Bright",
     "sources": {
         "mapbox": {
-          "type": "vector",
-          "tiles": [
-            "http://maps.co.mecklenburg.nc.us/tiles/united_states_of_america/{z}/{x}/{y}.pbf"
-          ],
-          "maxzoom": 14
+            "tiles": [
+                "http://maps.co.mecklenburg.nc.us/tiles/united_states_of_america/{z}/{x}/{y}.pbf"
+            ],
+            "type": "vector",
+            "maxzoom": 14
         },
         "parcels": {
           "type": "vector",
@@ -423,6 +423,84 @@
             },
             "metadata": {
                 "mapbox:group": "1444849371739.5945"
+            }
+        },
+        {
+            "id": "tax_parcels_outline",
+            "type": "line",
+            "source": "parcels",
+            "source-layer": "parcels",
+            "minzoom": 17,
+            "paint": {
+              "line-color": "#DEDEDE",
+              "line-width": 1.5
+            }
+        },
+        {
+            "id": "building",
+            "type": "fill",
+            "source": "parcels",
+            "source-layer": "buildings",
+            "paint": {
+                "fill-color": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            15.5,
+                            "#f2eae2"
+                        ],
+                        [
+                            16,
+                            "#dfdbd7"
+                        ]
+                    ]
+                }
+            },
+            "metadata": {
+                "mapbox:group": "1444849364238.8171"
+            }
+        },
+        {
+            "id": "building_top",
+            "ref": "building",
+            "paint": {
+                "fill-color": "#f2eae2",
+                "fill-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            15,
+                            0
+                        ],
+                        [
+                            16,
+                            1
+                        ]
+                    ]
+                },
+                "fill-translate": {
+                    "stops": [
+                        [
+                            15,
+                            [
+                                0,
+                                0
+                            ]
+                        ],
+                        [
+                            16,
+                            [
+                                -2,
+                                -2
+                            ]
+                        ]
+                    ],
+                    "base": 1
+                },
+                "fill-outline-color": "#dfdbd7"
+            },
+            "metadata": {
+                "mapbox:group": "1444849364238.8171"
             }
         },
         {
@@ -3041,99 +3119,6 @@
             },
             "metadata": {
                 "mapbox:group": "1444849242106.713"
-            }
-        },
-        {
-            "id": "tax_parcels_outline",
-            "type": "line",
-            "source": "parcels",
-            "source-layer": "parcels",
-            "minzoom": 17,
-            "paint": {
-              "line-color": "#DEDEDE",
-              "line-width": 1.5
-            }
-        },
-        {
-            "id": "building",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "building",
-            "paint": {
-                "fill-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            15.5,
-                            "#f2eae2"
-                        ],
-                        [
-                            16,
-                            "#dfdbd7"
-                        ]
-                    ]
-                }
-            }
-        },
-        {
-            "id": "buildings",
-            "type": "fill",
-            "source": "parcels",
-            "source-layer": "buildings",
-            "paint": {
-                "fill-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            15.5,
-                            "#f2eae2"
-                        ],
-                        [
-                            16,
-                            "#dfdbd7"
-                        ]
-                    ]
-                }
-            }
-        },
-        {
-            "id": "buildings_top",
-            "ref": "buildings",
-            "paint": {
-                "fill-color": "#f2eae2",
-                "fill-opacity": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            15,
-                            0
-                        ],
-                        [
-                            16,
-                            1
-                        ]
-                    ]
-                },
-                "fill-translate": {
-                    "stops": [
-                        [
-                            15,
-                            [
-                                0,
-                                0
-                            ]
-                        ],
-                        [
-                            16,
-                            [
-                                -2,
-                                -2
-                            ]
-                        ]
-                    ],
-                    "base": 1
-                },
-                "fill-outline-color": "#dfdbd7"
             }
         }
     ]

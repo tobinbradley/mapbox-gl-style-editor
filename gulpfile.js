@@ -109,4 +109,5 @@ gulp.task('watch', function() {
 
 
 gulp.task('default', ['clean', 'sprites', 'fonts', 'browser-sync', 'watch', 'gl-style-validate']);
+//gulp.task('default', ['clean', 'sprites', 'browser-sync', 'watch', 'gl-style-validate']);
 gulp.task('generate', ['clean', 'sprites', 'fonts']);

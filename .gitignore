@@ -1,6 +1,5 @@
 .directory
 node_modules
-app/assets/font/*
-app/assets/sprite.*
-app/assets/sprite2.*
+app/assets
 app/style.json
+

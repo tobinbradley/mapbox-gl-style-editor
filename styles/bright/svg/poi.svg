@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="-1 -1 17 17"
+   width="17"
+   height="17"
+   data-reactid=".0.1.1.$marker-15=1svg71.0.0"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="poi.svg">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="13.882353"
+     inkscape:cx="8.4279661"
+     inkscape:cy="8.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     d="M 7.5,0 C 5.0675675,0 2.2297297,1.4864865 2.2297297,5.2702703 2.2297297,7.8378378 6.2837838,13.513514 7.5,15 8.5810811,13.513514 12.770271,7.972973 12.770271,5.2702703 12.770271,1.4864865 9.932433,0 7.5,0 Z"
+     style="stroke-linejoin:round;stroke-miterlimit:4px;"
+     fill="#ffffff"
+     stroke="#ffffff"
+     stroke-width="2"
+     opacity="0.3"
+     data-reactid=".0.1.1.$marker-15=1svg71.0.0.2:$marker-15=1svg-0-fill"
+     id="path4" />
+  <path
+     style="fill:#668000"
+     d="M 8.5 1 C 6.0675675 1 3.2304688 2.4857474 3.2304688 6.2695312 C 3.2304688 8.8370987 7.2837838 14.513514 8.5 16 C 9.5810811 14.513514 13.769531 8.9722339 13.769531 6.2695312 C 13.769531 2.4857474 10.932433 1 8.5 1 z M 8.5 3.890625 A 2.2690678 2.2690678 0 0 1 10.769531 6.1582031 A 2.2690678 2.2690678 0 0 1 8.5 8.4277344 A 2.2690678 2.2690678 0 0 1 6.2304688 6.1582031 A 2.2690678 2.2690678 0 0 1 8.5 3.890625 z "
+     transform="translate(-1,-1)"
+     id="path6" />
+  <circle
+     r="2.2690678"
+     cy="5.1588979"
+     cx="7.5"
+     id="circle4142"
+     style="opacity:1;fill:none;stroke:#2d5016;stroke-opacity:1" />
+</svg>
