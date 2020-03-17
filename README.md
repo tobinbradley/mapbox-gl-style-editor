@@ -2,27 +2,18 @@
 
 A basic code editor for Mapbox Gl Styles, inspired by [mapbox-gl-codeflow-example](https://github.com/mapbox/mapbox-gl-codeflow-example).
 
-The primary differences in this one:
+To get started:
 
-* Support for font processing via [genfontgl](https://github.com/sabas/genfontgl).
-* Support for SVG processing via [spritezero-cli](https://github.com/mapbox/spritezero-cli).
-* GL Spec validation moved from client to node.
-
-To get started, first install the dependencies.
-
-``` bash
+```bash
+git clone https://github.com/tobinbradley/mapbox-gl-style-editor.git
+cd mapbox-gl-style-editor
 npm install
+npm start
 ```
 
-Then start the server:
-``` bash
-gulp --style=bright
-```
+If you have a GL JS style file you want to work on, save it as `src/gl-style/style.json` and get cracking!
 
-The style argument is a folder in styles folder. Each style folder should contain:
+Additional features:
 
-* The Mapbox GL style file as ```style.json```.
-* A ```font``` folder containing any font files to be converted to protobuf.
-* A ```svg``` folder containing SVG's to be rendered to a sprite file.
-
-When finished, the style file and rendered assets are in the ```app``` folder.
+* If your style changes are not valid per the Mapbox GL Style Specification, it will display the error in the web browser.
+* Clicking on a feature will give you information on the feature from the style file.

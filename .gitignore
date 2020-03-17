@@ -1,5 +1,3 @@
 .directory
 node_modules
-app/assets
-app/style.json
-
+styles

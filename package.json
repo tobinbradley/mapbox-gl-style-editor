@@ -2,11 +2,8 @@
   "name": "mapbox-gl-editor",
   "version": "1.0.0",
   "description": "Editor for mapbox gl style inspired by mapbox-gl-codeflow-example",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "makefont": "genfontgl",
-    "makesprite": "spritezero"
+    "start": "node_modules/.bin/browser-sync start -s src -f src"
   },
   "keywords": [
     "mapbox-gl"
@@ -14,15 +11,6 @@
   "author": "Tobin Bradley",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.11.1",
-    "bs-fullscreen-message": "^1.0.2",
-    "genfontgl": "git+https://github.com/sabas/genfontgl.git",
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.1",
-    "gulp-exec": "^2.1.2",
-    "mapbox-gl-style-spec": "^8.4.2",
-    "minimist": "^1.2.0",
-    "mkdirp": "^0.5.1",
-    "spritezero-cli": "^1.0.2"
+    "browser-sync": "^2.26.7"
   }
 }
